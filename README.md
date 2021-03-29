@@ -3,18 +3,18 @@ Nesta tarefa você irá desenvolver um site para academia, onde a pessoa que tre
 
 # Descrição dos arquivos
 
-index.html = Entramos com nome, sexo, peso, altura e modalidade.
+**index.html** = Entramos com nome, sexo, peso, altura e modalidade.
 
 Através do método POST somos enviados ao arquivo:
 
-valor.php = Onde é iniciada a sessão para armazenarmos todos os dados da pessoas em globais. É nesse arquivo que também é feito o cálculo do peso ideal. Também nesse arquivo que é exibido o preço das modalidades e oferecido planos e métodos de pagamentos.
+**valor.php** = Onde é iniciada a sessão para armazenarmos todos os dados da pessoas em globais. É nesse arquivo que também é feito o cálculo do peso ideal. Também nesse arquivo que é exibido o preço das modalidades e oferecido planos e métodos de pagamentos.
 
 Através do método POST somos enviados ao arquivo:
 
-pay.php = É calculado o preço final baseada no preço do plano e é exibido a possibilidade de parcelar em até 12x.
+**pay.php** = É calculado o preço final baseada no preço do plano e é exibido a possibilidade de parcelar em até 12x.
 
 Através do método POST somos enviados ao arquivo:
 
-finalizar.php = É exibido tudo que foi criado como global. É dito se o peso da pessoa está ideal ou não, o preço da parcela, a quantidade de parcelas e o preço final, a modalidade e todos os dados pessoais da pessoa
+**finalizar.php** = É exibido tudo que foi criado como global. É dito se o peso da pessoa está ideal ou não, o preço da parcela, a quantidade de parcelas e o preço final, a modalidade e todos os dados pessoais da pessoa
 
 Todos os arquivos possuem uma estruturação básica de CSS.
