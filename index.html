@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Academia do Juan </title>
+        <style type="text/css">
+            body{
+                font-family: Calibri, Arial;
+                 background: #e9e9e9;
+                 margin: 0;
+            }
+            textarea{
+                width: 500px;
+                height: 150px;
+                font-size: 15px;
+                padding-top: 7px;
+                margin-left: 10px;
+            }
+            h2{
+                padding: 20px;
+                margin-top: 0px;
+                background: rgb(102,0,204);
+                background: radial-gradient(circle, rgba(102,0,204,1) 63%, rgba(102,0,102,1) 87%);
+                color: white;
+            } 
+            
+            .explica-titulo{
+                margin-left: 10px;
+                margin-bottom: 0px;
+                font-size: 25px;
+            }
+            
+            p{
+                margin-left: 10px;
+                font-size: 20px;
+            }
+            
+            form{
+                margin-left: 10px;
+                position: relative;
+                margin-bottom: 10px;
+            }
+            
+           input[type="number"], input[type="text"]{
+                position: absolute;
+                left: 250px;
+                width: 300px;
+                height: 17px;
+            }
+            
+            select{
+                position: absolute;
+                left: 370px;
+                width: 185px;
+                height: 27px;
+                font-size: 15px;
+            }
+    
+            
+            input[type="submit"], input[type="reset"] {
+                left: 200px;
+                width: 100px;
+                height: 30px;
+                background: rgb(102,0,204);
+                background: radial-gradient(circle, rgba(102,0,204,1) 63%, rgba(102,0,102,1) 87%);
+                border-radius: 5px;
+                font-size: 15px;
+                color: white;
+                
+            }
+            
+
+            
+        </style>
+    </head>
+<body>
+    <h2>Academia do Juan</h2>
+    <p class="explica-titulo"> Exercício: </p>
+    <textarea readonly="true">
+Nesta tarefa você irá desenvolver um site para academia, onde a pessoa que treina deve inserir seu nome, sexo, peso altura e escolher uma modalidade, ex: dança, musculação, boxe. 
+Após escolher a modalidade deve escolher seu plano de pagamento e informar quantidade de parcelas que deseja pagar.
+Ao final das escolhas o site deve imprimir na tela o Nome do aluno, sua situação de peso ideal, a modalidade que escolheu, valor do plano e todas parcelas de acordo com a opção selecionada.        
+    </textarea>
+    <hr>
+    <h2>Preencha os dados:</h2>
+        <form action="valor.php" method="post">
+            <p><label for="aluno">Nome: </label> <input type="text" name="nome" required></p>
+            <p><label for="sexo">Sexo:</label><br><input type="radio" name="sexo" value="masculino" required>Masculino<input type="radio" name="sexo" value="feminino">Feminino</p>
+            <p><label for="peso">Peso (em kg): </label> <input type="number" name="peso" required></p>
+            <p><label for="altura">Altura (em cm e sem traços): </label> <input type="number" name="altura" required></p>
+            <p>
+            <label for="modalidade">Modalidade de esporte que deseja praticar:</label>
+            <select name="modalidade">
+                <option> </option>
+                <option value="danca">Dança</option>
+                <option value="musculacao">Musculação</option>
+                <option value="boxe">Boxe</option>
+                <option value="judo">Judo</option>
+                <option value="jiujitsu">Jiu-jitsu</option>
+            </select>
+            </p>
+
+            <input type="submit" value="PROXIMO">
+            <input type="reset" value="LIMPAR">
+        </form>
+    <h2>Aula de PW do Douglão, 2W-2020, Juan Reis</h2>
+</body>
+</html>
